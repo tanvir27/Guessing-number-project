@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun with Gussing Number</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <section class="header-section">
+      <div class="container">
+        <h1 class="">Fun with Gussing Number</h1>
+      </div>
+    </section>
+
+    <main class="body-section">
+      <div class="container">
+            <div class="form-field" id="form-field">
+                <label for="guessingNumber" class="" >Guess a Number Between 1-5: </label>
+              <input
+                type="number"
+                id="guessingNumber"
+                min="1"
+                max="5"
+                required
+              />
+            </div>
+            <div class="button-section">
+                <button type="submit" class="button" id="button">Check Result</button>
+            </div>      
+      </div>
+    </main>
+
+    
+      <div class="result-body" id="result-body">
+        <div class="inner-part" id="inner-part">
+          <div class="win-sec">
+            <h1 id="win-count"> </h1>
+          </div>
+          <div class="loss-sec">
+            <h1 id="loss-count"> </h1>
+          </div>
+          
+        </div>
+        <p id="remaining-attempts"></p>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
